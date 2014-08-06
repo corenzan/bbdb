@@ -16,9 +16,10 @@
     "node": "0.10.x"
   },
   "dependencies": {
+    "cors": "2.4.x",
     "express": "3.x",
     "logfmt": "1.x",
-    "newrelic": "^1.9.1",
+    "newrelic": "1.9.x",
     "slug": "0.x"
   }
 }
