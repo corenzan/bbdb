@@ -1,0 +1,24 @@
+{
+  "name": "divine-bush-3090",
+  "version": "1.0.0",
+  "description": "API to query a list of Brazilian banks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@heroku.com:hidden-falls-5638.git"
+  },
+  "author": "Arthur <arthur@corenzan.com>",
+  "license": "None",
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": "3.x",
+    "logfmt": "1.x",
+    "newrelic": "^1.9.1",
+    "slug": "0.x"
+  }
+}
