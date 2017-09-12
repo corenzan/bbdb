@@ -1,17 +1,21 @@
-# divine-bush-3090
+# Brazilian Banks API
 
-> API to query a list of Brazilian banks.
+> API to query and filter the list of banks in Brazil.
 
-## API:
+## API
 
 - `GET /`
+
+Returns the whole list.
+
 - `GET /?q=<query>`
 
-The possible responses are:
+Filters by simple text match.
 
-1. JSON with the query result.
-2. Empty document with no mimetype.
-
-## Reference:
+## Reference
 
 1. http://www.febraban.org.br/bancos.asp
+
+## License
+
+The MIT License &copy; Arthur Corenzan 2017

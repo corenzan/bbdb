@@ -1,25 +1,27 @@
-var newrelic = require('newrelic');
-var express  = require("express");
-var logfmt   = require("logfmt");
-var slug     = require("slug");
-var cors     = require("cors");
-var data     = require(__dirname + '/data');
-var app      = express();
+const fastify = require('fastify');
+const slug = require('slug');
+const cors = require('cors');
+const database = require('./database');
 
-app.use(logfmt.requestLogger());
+const app = fastify();
+
 app.use(cors());
 
-app.get('/', function(request, response) {
-  if('q' in request.query) {
-    response.json(data.filter(function(doc) {
-      var q = request.query.q.toLowerCase();
-      var t = slug(doc.code + ' ' + doc.name).toLowerCase();
-
+app.get('/', (req, reply) => {
+  if('q' in req.query) {
+    reply.send(database.filter(function(doc) {
+      const q = slug(req.query.q).toLowerCase();
+      const t = slug(doc.code + ' ' + doc.name).toLowerCase();
       return t.indexOf(q) > -1;
     }));
   } else {
-    response.json(data);
+    reply.send(database);
   }
 });
 
-app.listen(Number(process.env.PORT || 5000));
+app.listen(Number(process.env.PORT || 5000), (err) => {
+  if (err) {
+    throw err;
+  }
+  console.log('Listening...');
+});
