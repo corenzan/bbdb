@@ -1,11 +1,11 @@
 const fastify = require('fastify');
 const slug = require('slug');
-const cors = require('cors');
 const database = require('./database');
 
 const app = fastify();
 
-app.use(cors());
+app.use(require('response-time')());
+app.use(require('cors')());
 
 app.get('/', (req, reply) => {
   if('q' in req.query) {
