@@ -1,8 +1,10 @@
 # Brazilian Banks API
 
-> API to query and filter the list of banks in Brazil.
+> Query names and codes of banks in Brazil.
 
 ## API
+
+https://brazilian-banks-api.herokuapp.com/
 
 - `GET /`
 

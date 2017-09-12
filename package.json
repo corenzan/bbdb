@@ -1,14 +1,14 @@
 {
   "name": "brazilian-banks-api",
   "version": "1.0.0",
-  "description": "API to query a list of Brazilian banks",
+  "description": "Query names and codes of banks in Brazil.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git@heroku.com:hidden-falls-5638.git"
+    "url": "https://github.com/haggen/brazilian-banks-api.git"
   },
   "author": "Arthur <arthur@corenzan.com>",
   "license": "MIT",
