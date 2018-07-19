@@ -7,6 +7,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"os"
 	"time"
 )
 
@@ -71,5 +72,5 @@ func main() {
 	matcher = search.New(language.BrazilianPortuguese, search.Loose)
 
 	log.Println("Listening...")
-	log.Fatal(http.ListenAndServe(":8080", http.HandlerFunc(handler)))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), http.HandlerFunc(handler)))
 }
