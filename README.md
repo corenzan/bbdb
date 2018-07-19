@@ -72,6 +72,12 @@ The endpoint is `https://brazilian-banks-api.herokuapp.com`.
   <dd>Filter the list by text match, ignoring special characters and accents.</dd>
 </dl>
 
+## Developer's Note
+
+```js
+document.write(JSON.stringify(Array.from(document.querySelectorAll('td>a[href^="AgenciasRegioes.asp?"]')).map((a) => { const site = a.parentElement.nextElementSibling.querySelector('a:not([href="http://"])');return {code: a.parentElement.previousElementSibling.textContent.trim(), name:a.textContent.trim(), url: (site ? site.href : '')}; })));
+```
+
 ## Reference
 
 1. [http://www.febraban.org.br/bancos.asp](http://www.febraban.org.br/bancos.asp)

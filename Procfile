@@ -1,1 +1,1 @@
-web: node index.js
+web: brazilian-banks-api
