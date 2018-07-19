@@ -9,10 +9,7 @@
 ```
 GET /?q=itau HTTP/1.1
 Accept: */*
-Accept-Encoding: gzip, deflate
-Connection: keep-alive
 Host: brazilian-banks-api.herokuapp.com
-User-Agent: HTTPie/0.9.9
 ```
 
 #### Response
@@ -20,13 +17,9 @@ User-Agent: HTTPie/0.9.9
 ```
 HTTP/1.1 200 OK
 Access-Control-Allow-Origin: *
-Connection: keep-alive
 Content-Length: 330
 Content-Type: application/json
 Date: Tue, 12 Sep 2017 23:00:44 GMT
-Server: Cowboy
-Via: 1.1 vegur
-X-Response-Time: 39.187ms
 
 [
     {
@@ -60,6 +53,7 @@ X-Response-Time: 39.187ms
 ]
 ```
 
+Optionally you can omit the `q` parameter to get a list of all banks.
 
 ## API
 
@@ -69,7 +63,7 @@ The endpoint is `https://brazilian-banks-api.herokuapp.com`.
   <dt><code>GET /</code></dt>
   <dd>Returns the whole list.</dd>
   <dt><code>GET /?q=...</code></dt>
-  <dd>Filter the list by text match, ignoring special characters and accents.</dd>
+  <dd>Filter the list by partial match, ignoring accents and special characters.</dd>
 </dl>
 
 ## Developer's Note
