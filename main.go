@@ -14,6 +14,7 @@ import (
 type Record struct {
 	Name string `json:"name"`
 	Code string `json:"code"`
+	URL string `json:"url"`
 }
 
 var database []Record
