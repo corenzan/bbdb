@@ -1,882 +1,1512 @@
 [
   {
-    "code": "",
-    "name": "Alvorada Banco de Investimento"
+    "code":"",
+    "name":"ABC Brasil Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.abcbrasil.com.br/"
   },
   {
-    "code": "654",
-    "name": "Banco A.J.Renner S.A."
+    "code":"",
+    "name":"Banco de Desenvolvimento do Estado de Santa Catarina S.A.",
+    "url":""
   },
   {
-    "code": "246",
-    "name": "Banco ABC Brasil S.A."
+    "code":"",
+    "name":"Agiplan Financeira S.A. - Crédito Financiamento e Investimento",
+    "url":"http://www.agiplanfinanceira.com.br/"
   },
   {
-    "code": "075",
-    "name": "Banco ABN AMRO S.A."
+    "code":"",
+    "name":"Ágora Corretora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.agorainvest.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Alfa de Investimentos S.A."
+    "code":"",
+    "name":"Alfa Arrendamento Mercantil S.A.",
+    "url":"http://www.alfanet.com.br/"
   },
   {
-    "code": "025",
-    "name": "Banco Alfa S.A."
+    "code":"",
+    "name":"Alfa Corretora de Câmbio e Valores Mobiliários S.A.",
+    "url":"http://www.alfanet.com.br/"
   },
   {
-    "code": "641",
-    "name": "Banco Alvorada S.A."
+    "code":"",
+    "name":"Bacor Corretora de Câmbio e Valores Mobiliários S.A.",
+    "url":"http://www.bancobbm.com.br/"
   },
   {
-    "code": "213",
-    "name": "Banco Arbi S.A."
+    "code":"",
+    "name":"Bahia Administração de Recursos Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.bancobbm.com.br/"
   },
   {
-    "code": "019",
-    "name": "Banco Azteca do Brasil S.A."
+    "code":"654",
+    "name":"Banco A.J.Renner S.A.",
+    "url":"http://www.bancorenner.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Bandeirantes de Investimentos S.A."
+    "code":"246",
+    "name":"Banco ABC Brasil S.A.",
+    "url":"http://www.abcbrasil.com.br/"
   },
   {
-    "code": "029",
-    "name": "Banco Banerj S.A."
+    "code":"075",
+    "name":"Banco CR2 S.A.",
+    "url":"http://www.bancocr2.com.br/"
   },
   {
-    "code": "000",
-    "name": "Banco Bankpar S.A."
+    "code":"121",
+    "name":"Banco Agibank S.A.",
+    "url":"http://www.agibank.com.br/"
   },
   {
-    "code": "740",
-    "name": "Banco Barclays S.A."
+    "code":"",
+    "name":"Banco Alfa de Investimentos S.A.",
+    "url":"http://www.alfanet.com.br/"
   },
   {
-    "code": "107",
-    "name": "Banco BBM S.A."
+    "code":"025",
+    "name":"Banco Alfa S.A.",
+    "url":"http://www.bancoalfa.com.br/"
   },
   {
-    "code": "031",
-    "name": "Banco Beg S.A."
+    "code":"641",
+    "name":"Banco Alvorada S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "122-8",
-    "name": "Banco BERJ S.A."
+    "code":"065",
+    "name":"Banco Patagon S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "739",
-    "name": "Banco BGN S.A."
+    "code":"213",
+    "name":"Banco Arbi S.A.",
+    "url":"http://www.arbi.com.br/"
   },
   {
-    "code": "096",
-    "name": "Banco BM&FBOVESPA de Serviços de Liquidação e Custódia S.A"
+    "code":"024",
+    "name":"Banco BANDEPE S.A.",
+    "url":"http://www.santander.com.br/"
   },
   {
-    "code": "318",
-    "name": "Banco BMG S.A."
+    "code":"107",
+    "name":"Banco BOCOM BBM S.A.",
+    "url":"http://www.bancobbm.com.br/"
   },
   {
-    "code": "752",
-    "name": "Banco BNP Paribas Brasil S.A."
+    "code":"096",
+    "name":"Banco B3 S.A.",
+    "url":"http://www.bmfbovespa.com.br/bancobmfbovespa/"
   },
   {
-    "code": "248",
-    "name": "Banco Boavista Interatlântico S.A."
+    "code":"318",
+    "name":"Banco BMG S.A.",
+    "url":"http://www.bancobmg.com.br/"
   },
   {
-    "code": "218",
-    "name": "Banco Bonsucesso S.A."
+    "code":"752",
+    "name":"Banco BNP Paribas Brasil S.A.",
+    "url":"http://www.bnpparibas.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco BPI Investimentos S.A."
+    "code":"063",
+    "name":"Ibibank S.A. - Banco Múltiplo",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "065",
-    "name": "Banco Bracce S.A."
+    "code":"036",
+    "name":"Banco Bradesco BBI S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "036",
-    "name": "Banco Bradesco BBI S.A."
+    "code":"122",
+    "name":"Banco Bradesco BERJ S.A.",
+    "url":""
   },
   {
-    "code": "204",
-    "name": "Banco Bradesco Cartões S.A."
+    "code":"204",
+    "name":"Banco Bradesco Cartões S.A.",
+    "url":"http://xn--no%20tem%20site-kkb/"
   },
   {
-    "code": "394",
-    "name": "Banco Bradesco Financiamentos S.A."
+    "code":"394",
+    "name":"Banco Bradesco Financiamentos S.A.",
+    "url":"http://xn--no%20tem%20site-kkb/"
   },
   {
-    "code": "237",
-    "name": "Banco Bradesco S.A."
+    "code":"237",
+    "name":"Banco Bradesco S.A.",
+    "url":"http://www.bradesco.com.br/"
   },
   {
-    "code": "225",
-    "name": "Banco Brascan  S.A."
+    "code":"218",
+    "name":"Banco BS2 S.A.",
+    "url":"http://www.bs2.com/banco/"
   },
   {
-    "code": "M15",
-    "name": "Banco BRJ S.A."
+    "code":"208",
+    "name":"Banco BTG Pactual S.A.",
+    "url":"http://www.btgpactual.com/"
   },
   {
-    "code": "208",
-    "name": "Banco BTG Pactual S.A."
+    "code":"473",
+    "name":"Banco Financial Português S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "044",
-    "name": "Banco BVA S.A."
+    "code":"412",
+    "name":"Banco Capital S.A.",
+    "url":"http://www.bancocapital.com.br/"
   },
   {
-    "code": "263",
-    "name": "Banco Cacique S.A."
+    "code":"040",
+    "name":"Banco Cargill S.A.",
+    "url":"http://www.bancocargill.com.br/"
   },
   {
-    "code": "473",
-    "name": "Banco Caixa Geral - Brasil S.A."
+    "code":"",
+    "name":"Banco Caterpillar S.A.",
+    "url":"http://www.catfinancial.com.br/"
   },
   {
-    "code": "412",
-    "name": "Banco Capital S.A."
+    "code":"",
+    "name":"Banco CBSS S.A.",
+    "url":"http://www.aebb.com.br/"
   },
   {
-    "code": "040",
-    "name": "Banco Cargill S.A."
+    "code":"266",
+    "name":"Banco Cédula S.A.",
+    "url":"http://www.bancocedula.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Caterpillar S.A."
+    "code":"739",
+    "name":"Banco Cetelem S.A.",
+    "url":"http://www.cetelem.com.br/"
   },
   {
-    "code": "266",
-    "name": "Banco Cédula S.A."
+    "code":"233",
+    "name":"Banco Cifra S.A.",
+    "url":"http://www.bancocifra.com.br/"
   },
   {
-    "code": "233",
-    "name": "Banco Cifra S.A."
+    "code":"745",
+    "name":"Banco Citibank S.A.",
+    "url":"http://www.citibank.com.br/"
   },
   {
-    "code": "745",
-    "name": "Banco Citibank S.A."
+    "code":"241",
+    "name":"Banco Clássico S.A.",
+    "url":"http://www.bancoclassico.com.br/"
   },
   {
-    "code": "M08",
-    "name": "Banco Citicard S.A."
+    "code":"",
+    "name":"Banco CNH Industrial Capital S.A.",
+    "url":"http://www.cnhindustrialcapital.com/"
   },
   {
-    "code": "241",
-    "name": "Banco Clássico S.A."
+    "code":"095",
+    "name":"Banco Confidence de Câmbio S.A.",
+    "url":"http://www.bancoconfidence.com.br/"
   },
   {
-    "code": "M19",
-    "name": "Banco CNH Capital S.A."
+    "code":"756",
+    "name":"Banco Cooperativo do Brasil S.A. - BANCOOB",
+    "url":"http://www.bancoob.com.br/"
   },
   {
-    "code": "215",
-    "name": "Banco Comercial e de Investimento Sudameris S.A."
+    "code":"748",
+    "name":"Banco Cooperativo Sicredi S.A.",
+    "url":"http://www.sicredi.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Commercial Investment Trus do Brasil S.A."
+    "code":"222",
+    "name":"Banco Credit Agricole Brasil S.A.",
+    "url":"http://www.calyon.com.br/"
   },
   {
-    "code": "095",
-    "name": "Banco Confidence de Câmbio S.A."
+    "code":"505",
+    "name":"Banco Credit Suisse (Brasil) S.A.",
+    "url":"http://www.csfb.com/"
   },
   {
-    "code": "756",
-    "name": "Banco Cooperativo do Brasil S.A. - BANCOOB"
+    "code":"069",
+    "name":"Banco Crefisa S.A.",
+    "url":"http://www.crefisa.com.br/"
   },
   {
-    "code": "748",
-    "name": "Banco Cooperativo Sicredi S.A."
+    "code":"",
+    "name":"Banco CSF S.A.",
+    "url":""
   },
   {
-    "code": "721",
-    "name": "Banco Credibel S.A."
+    "code":"003",
+    "name":"Banco da Amazônia S.A.",
+    "url":"http://www.bancoamazonia.com.br/"
   },
   {
-    "code": "222",
-    "name": "Banco Credit Agricole Brasil S.A."
+    "code":"083",
+    "name":"Banco da China Brasil S.A.",
+    "url":"http://www.boc-brazil.com/"
   },
   {
-    "code": "505",
-    "name": "Banco Credit Suisse (Brasil) S.A."
+    "code":"707",
+    "name":"Banco Daycoval S.A.",
+    "url":"http://www.daycoval.com.br/"
   },
   {
-    "code": "229",
-    "name": "Banco Cruzeiro do Sul S.A."
+    "code":"",
+    "name":"Banco de Investimento Credit Suisse (Brasil) S.A.",
+    "url":"http://www.csfb.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco CSF S.A."
+    "code":"300",
+    "name":"Banco de La Nacion Argentina",
+    "url":"http://www.bna.com.ar/"
   },
   {
-    "code": "003",
-    "name": "Banco da Amazônia S.A."
+    "code":"495",
+    "name":"Banco de La Provincia de Buenos Aires",
+    "url":"http://www.bapro.com.ar/"
   },
   {
-    "code": "083-3",
-    "name": "Banco da China Brasil S.A."
+    "code":"494",
+    "name":"Banco de La Republica Oriental del Uruguay",
+    "url":"http://www.bancorepublica.com.uy/"
   },
   {
-    "code": "M21",
-    "name": "Banco Daimlerchrysler S.A."
+    "code":"",
+    "name":"Banco de Lage Landen Brasil S.A.",
+    "url":"http://www.dllgroup.com/"
   },
   {
-    "code": "707",
-    "name": "Banco Daycoval S.A."
+    "code":"456",
+    "name":"Banco MUFG Brasil S.A.",
+    "url":"http://www.br.bk.mufg.jp/"
   },
   {
-    "code": "",
-    "name": "BANCO DE INVEST TENDENCIA S.A."
+    "code":"001",
+    "name":"Banco do Brasil S.A.",
+    "url":"http://www.bb.com.br/"
   },
   {
-    "code": "",
-    "name": "BANCO DE INVESTIMENTOS CREDIT SUISSE BRASIL S.A. - CREDIT SUISSE"
+    "code":"047",
+    "name":"Banco do Estado de Sergipe S.A.",
+    "url":"http://www.banese.com.br/"
   },
   {
-    "code": "300",
-    "name": "Banco de La Nacion Argentina"
+    "code":"037",
+    "name":"Banco do Estado do Pará S.A.",
+    "url":"http://www.banpara.b.br/"
   },
   {
-    "code": "495",
-    "name": "Banco de La Provincia de Buenos Aires"
+    "code":"041",
+    "name":"Banco do Estado do Rio Grande do Sul S.A.",
+    "url":"http://www.banrisul.com.br/"
   },
   {
-    "code": "494",
-    "name": "Banco de La Republica Oriental del Uruguay"
+    "code":"004",
+    "name":"Banco do Nordeste do Brasil S.A.",
+    "url":"http://www.banconordeste.gov.br/"
   },
   {
-    "code": "M06",
-    "name": "Banco de Lage Landen Brasil S.A."
+    "code":"265",
+    "name":"Banco Fator S.A.",
+    "url":"http://www.fator.com.br/"
   },
   {
-    "code": "024",
-    "name": "Banco de Pernambuco S.A. - BANDEPE"
+    "code":"224",
+    "name":"Banco Fibra S.A.",
+    "url":"http://www.bancofibra.com.br/"
   },
   {
-    "code": "456",
-    "name": "Banco de Tokyo-Mitsubishi UFJ Brasil S.A."
+    "code":"626",
+    "name":"Banco Ficsa S.A.",
+    "url":"http://www.ficsa.com.br/"
   },
   {
-    "code": "214",
-    "name": "Banco Dibens S.A."
+    "code":"",
+    "name":"Banco Fidis S.A.",
+    "url":"http://www.bancofidis.com.br/"
   },
   {
-    "code": "001",
-    "name": "Banco do Brasil S.A."
+    "code":"094",
+    "name":"Banco Finaxis S.A.",
+    "url":"http://www.bancofinaxis.com.br/"
   },
   {
-    "code": "047",
-    "name": "Banco do Estado de Sergipe S.A."
+    "code":"",
+    "name":"Banco Ford S.A.",
+    "url":"http://www.bancoford.com.br/"
   },
   {
-    "code": "037",
-    "name": "Banco do Estado do Pará S.A."
+    "code":"",
+    "name":"Banco GMAC S.A.",
+    "url":"http://www.chevroletsf.com.br/"
   },
   {
-    "code": "039",
-    "name": "Banco do Estado do Piauí S.A. - BEP"
+    "code":"612",
+    "name":"Banco Guanabara S.A.",
+    "url":"http://www.bancoguanabara.com.br/"
   },
   {
-    "code": "041",
-    "name": "Banco do Estado do Rio Grande do Sul S.A."
+    "code":"",
+    "name":"Banco Honda S.A.",
+    "url":"http://www.bancohonda.com.br/"
   },
   {
-    "code": "004",
-    "name": "Banco do Nordeste do Brasil S.A."
+    "code":"",
+    "name":"Banco IBM S.A.",
+    "url":"http://www.ibm.com/financing/br"
   },
   {
-    "code": "265",
-    "name": "Banco Fator S.A."
+    "code":"012",
+    "name":"Banco INBURSA de Investimentos S.A.",
+    "url":"http://www.bancoinbursa.com/"
   },
   {
-    "code": "M03",
-    "name": "Banco Fiat S.A."
+    "code":"258",
+    "name":"Banco Induscred S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "224",
-    "name": "Banco Fibra S.A."
+    "code":"604",
+    "name":"Banco Industrial do Brasil S.A.",
+    "url":"http://www.bancoindustrial.com.br/"
   },
   {
-    "code": "626",
-    "name": "Banco Ficsa S.A."
+    "code":"653",
+    "name":"Banco Indusval S.A.",
+    "url":"http://www.bip.b.br/"
   },
   {
-    "code": "",
-    "name": "Banco Fidis S.A."
+    "code":"077",
+    "name":"Banco Inter S.A.",
+    "url":"http://www.bancointer.com.br/"
   },
   {
-    "code": "394",
-    "name": "Banco Finasa BMC S.A."
+    "code":"630",
+    "name":"Banco Intercap S.A.",
+    "url":""
   },
   {
-    "code": "",
-    "name": "Banco Finasa de Investimentos S.A."
+    "code":"249",
+    "name":"Banco Investcred S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "M18",
-    "name": "Banco Ford S.A."
+    "code":"184",
+    "name":"Banco Itaú BBA S.A.",
+    "url":"http://www.itaubba.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Geração Futuro de Investimentos"
+    "code":"029",
+    "name":"Banco Itaú Consignado S.A.",
+    "url":""
   },
   {
-    "code": "",
-    "name": "Banco Gerador S.A."
+    "code":"",
+    "name":"Banco Itaú Veículos S.A.",
+    "url":"http://www.bancofiat.com.br/"
   },
   {
-    "code": "734",
-    "name": "Banco Gerdau S.A."
+    "code":"479",
+    "name":"Banco ItauBank S.A",
+    "url":"http://www.itaubank.com.br/"
   },
   {
-    "code": "M07",
-    "name": "Banco GMAC S.A."
+    "code":"",
+    "name":"Banco Itaucard S.A.",
+    "url":"http://www.itau.com.br/"
   },
   {
-    "code": "612",
-    "name": "Banco Guanabara S.A."
+    "code":"",
+    "name":"Banco Itauleasing S.A.",
+    "url":"http://www.itau.com.br/"
   },
   {
-    "code": "M22",
-    "name": "Banco Honda S.A."
+    "code":"074",
+    "name":"Banco J. Safra S.A.",
+    "url":"http://www.safra.com.br/"
   },
   {
-    "code": "063",
-    "name": "Banco Ibi S.A. Banco Múltiplo"
+    "code":"376",
+    "name":"Banco J. P. Morgan S.A.",
+    "url":"http://www.jpmorgan.com/"
   },
   {
-    "code": "M11",
-    "name": "Banco IBM S.A."
+    "code":"217",
+    "name":"Banco John Deere S.A.",
+    "url":"http://www.johndeere.com.br/"
   },
   {
-    "code": "604",
-    "name": "Banco Industrial do Brasil S.A."
+    "code":"076",
+    "name":"Banco KDB S.A.",
+    "url":"http://www.bancokdb.com.br/"
   },
   {
-    "code": "320",
-    "name": "Banco Industrial e Comercial S.A."
+    "code":"757",
+    "name":"Banco KEB HANA do Brasil S.A.",
+    "url":"http://www.bancokeb.com.br/"
   },
   {
-    "code": "653",
-    "name": "Banco Indusval S.A."
+    "code":"",
+    "name":"Banco Komatsu S.A.",
+    "url":"http://www.bancokomatsu.com.br/"
   },
   {
-    "code": "630",
-    "name": "Banco Intercap S.A."
+    "code":"600",
+    "name":"Banco Luso Brasileiro S.A.",
+    "url":"http://www.lusobrasileiro.com.br/"
   },
   {
-    "code": "077-9",
-    "name": "Banco Inter S.A."
+    "code":"243",
+    "name":"Banco Máxima S.A.",
+    "url":"http://www.bancomaxima.com.br/"
   },
   {
-    "code": "249",
-    "name": "Banco Investcred Unibanco S.A."
+    "code":"720",
+    "name":"Banco Maxinvest S.A.",
+    "url":"http://www.bancomaxinvest.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Investimentos BMC S.A."
+    "code":"",
+    "name":"Banco Mercantil de Investimentos S.A.",
+    "url":"http://www.mercantil.com.br/"
   },
   {
-    "code": "184",
-    "name": "Banco Itaú BBA S.A."
+    "code":"389",
+    "name":"Banco Mercantil do Brasil S.A.",
+    "url":"http://www.mercantil.com.br/"
   },
   {
-    "code": "479",
-    "name": "Banco ItaúBank S.A"
+    "code":"",
+    "name":"Banco Mercedes-Benz do Brasil S.A.",
+    "url":"http://www.bancomercedesbenz.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Itaucard S.A."
+    "code":"370",
+    "name":"Banco Europeu para a America Latina (BEAL) S.A.",
+    "url":"http://www.westlb.com/"
   },
   {
-    "code": "M09",
-    "name": "Banco Itaucred Financiamentos S.A."
+    "code":"746",
+    "name":"Banco Modal S.A.",
+    "url":"http://www.bancomodal.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco ITAULEASING S.A."
+    "code":"",
+    "name":"Banco Moneo S.A.",
+    "url":"http://www.bancomoneo.com.br/"
   },
   {
-    "code": "376",
-    "name": "Banco J. P. Morgan S.A."
+    "code":"066",
+    "name":"Banco Morgan Stanley S.A.",
+    "url":"http://www.morganstanley.com.br/"
   },
   {
-    "code": "074",
-    "name": "Banco J. Safra S.A."
+    "code":"007",
+    "name":"Banco Nacional de Desenvolvimento Econômico e Social",
+    "url":"http://www.bndes.gov.br/"
   },
   {
-    "code": "217",
-    "name": "Banco John Deere S.A."
+    "code":"735",
+    "name":"Banco Neon S.A.",
+    "url":"http://www.banconeon.com.br/"
   },
   {
-    "code": "076",
-    "name": "Banco KDB S.A."
+    "code":"169",
+    "name":"Banco Olé Bonsucesso Consignado S.A.",
+    "url":"http://www.oleconsignado.com.br/"
   },
   {
-    "code": "757",
-    "name": "Banco KEB do Brasil S.A."
+    "code":"079",
+    "name":"Banco Original do Agronegócio S.A.",
+    "url":"http://www.original.com.br/"
   },
   {
-    "code": "600",
-    "name": "Banco Luso Brasileiro S.A."
+    "code":"212",
+    "name":"Banco Original S.A.",
+    "url":"http://www.original.com.br/"
   },
   {
-    "code": "243",
-    "name": "Banco Máxima S.A."
+    "code":"712",
+    "name":"Banco Ourinvest S.A.",
+    "url":"http://www.ourinvest.com.br/"
   },
   {
-    "code": "M12",
-    "name": "Banco Maxinvest S.A."
+    "code":"623",
+    "name":"Banco PAN S.A.",
+    "url":"http://www.bancopan.com.br/"
   },
   {
-    "code": "",
-    "name": "BANCO MERCANTIL DE INVESTIMENTOS S.A."
+    "code":"611",
+    "name":"Banco Paulista S.A.",
+    "url":"http://www.bancopaulista.com.br/"
   },
   {
-    "code": "389",
-    "name": "Banco Mercantil do Brasil S.A."
+    "code":"613",
+    "name":"Banco Pecúnia S.A.",
+    "url":"http://www.bancopecunia.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Mercedes-Benz S.A."
+    "code":"643",
+    "name":"Banco Pine S.A.",
+    "url":"http://www.pine.com/"
   },
   {
-    "code": "370",
-    "name": "Banco Mizuho do Brasil S.A."
+    "code":"658",
+    "name":"Banco Porto Real S.A.",
+    "url":""
   },
   {
-    "code": "746",
-    "name": "Banco Modal S.A."
+    "code":"",
+    "name":"Banco PSA Finance Brasil S.A.",
+    "url":"http://www.bancopsa.com.br/"
   },
   {
-    "code": "M10",
-    "name": "Banco Moneo S.A."
+    "code":"747",
+    "name":"Banco Rabobank International Brasil S.A.",
+    "url":"http://www.rabobank.com.br/"
   },
   {
-    "code": "738",
-    "name": "Banco Morada S.A."
+    "code":"",
+    "name":"Banco Randon S.A.",
+    "url":"http://www.bancorandon.com/"
   },
   {
-    "code": "",
-    "name": "Banco Morada S.A."
+    "code":"",
+    "name":"Banco RCI Brasil S.A.",
+    "url":"http://www.bancorenault.com.br/"
   },
   {
-    "code": "066",
-    "name": "Banco Morgan Stanley S.A."
+    "code":"633",
+    "name":"Banco Rendimento S.A.",
+    "url":"http://www.rendimento.com.br/"
   },
   {
-    "code": "045",
-    "name": "Banco Opportunity S.A."
+    "code":"741",
+    "name":"Banco Ribeirão Preto S.A.",
+    "url":"http://www.brp.com.br/"
   },
   {
-    "code": "079",
-    "name": "Banco Original do Agronegócio S.A."
+    "code":"120",
+    "name":"Banco Rodobens S.A.",
+    "url":"http://www.rodobens.com.br/"
   },
   {
-    "code": "212",
-    "name": "Banco Original S.A."
+    "code":"422",
+    "name":"Banco Safra S.A.",
+    "url":"http://www.safra.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Ourinvest"
+    "code":"033",
+    "name":"Banco Santander (Brasil) S.A.",
+    "url":"http://www.santander.com.br/"
   },
   {
-    "code": "M17",
-    "name": "Banco Ourinvest S.A."
+    "code":"743",
+    "name":"Banco Semear S.A.",
+    "url":"http://www.bancosemear.com.br/"
   },
   {
-    "code": "623",
-    "name": "Banco Panamericano S.A."
+    "code":"",
+    "name":"Casa Bancária do Comércio e Indústria do Rio de Janeiro S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "611",
-    "name": "Banco Paulista S.A."
+    "code":"637",
+    "name":"Banco Sofisa S.A.",
+    "url":"http://www.sofisa.com.br/"
   },
   {
-    "code": "613",
-    "name": "Banco Pecúnia S.A."
+    "code":"464",
+    "name":"Banco Sumitomo Mitsui Brasileiro S.A.",
+    "url":"http://www.smbcgroup.com.br/"
   },
   {
-    "code": "094-2",
-    "name": "Banco Petra S.A."
+    "code":"082",
+    "name":"Banco Topázio S.A.",
+    "url":"http://www.bancotopazio.com.br/"
   },
   {
-    "code": "643",
-    "name": "Banco Pine S.A."
+    "code":"",
+    "name":"Banco Toyota do Brasil S.A.",
+    "url":"http://www.bancotoyota.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Porto Real de Investimentos S.A."
+    "code":"634",
+    "name":"Banco Triângulo S.A.",
+    "url":"http://www.tribanco.com.br/"
   },
   {
-    "code": "724",
-    "name": "Banco Porto Seguro S.A."
+    "code":"018",
+    "name":"Banco Tricury S.A.",
+    "url":"http://www.bancotricury.com.br/"
   },
   {
-    "code": "735",
-    "name": "Banco Pottencial S.A."
+    "code":"",
+    "name":"Banco Vipal S.A.",
+    "url":"http://www.bancovipal.com.br/"
   },
   {
-    "code": "638",
-    "name": "Banco Prosper S.A."
+    "code":"",
+    "name":"Banco Volkswagen S.A.",
+    "url":"http://www.bancovw.com.br/"
   },
   {
-    "code": "M24",
-    "name": "Banco PSA Finance Brasil S.A."
+    "code":"",
+    "name":"Banco Volvo Brasil S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "747",
-    "name": "Banco Rabobank International Brasil S.A."
+    "code":"655",
+    "name":"Banco Votorantim S.A.",
+    "url":"http://www.bancovotorantim.com.br/"
   },
   {
-    "code": "088-4",
-    "name": "Banco Randon S.A."
+    "code":"610",
+    "name":"Banco VR S.A.",
+    "url":"http://www.vrinvestimentos.com.br/"
   },
   {
-    "code": "356",
-    "name": "Banco Real S.A."
+    "code":"119",
+    "name":"Banco Western Union do Brasil S.A.",
+    "url":"http://www.bancowesternunion.com.br/"
   },
   {
-    "code": "633",
-    "name": "Banco Rendimento S.A."
+    "code":"124",
+    "name":"Banco Woori Bank do Brasil S.A.",
+    "url":"http://www.wooribank.com.br/"
   },
   {
-    "code": "741",
-    "name": "Banco Ribeirão Preto S.A."
+    "code":"",
+    "name":"Banco Yamaha Motor do Brasil S.A.",
+    "url":"http://www.yamaha-motor.com.br/"
   },
   {
-    "code": "M16",
-    "name": "Banco Rodobens S.A."
+    "code":"",
+    "name":"Bancoob Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":""
   },
   {
-    "code": "",
-    "name": "Banco Rural de Investimentos S.A."
+    "code":"",
+    "name":"Banestes Distribuidora de Títulos e Valores Mobiliários S/A",
+    "url":""
   },
   {
-    "code": "072",
-    "name": "Banco Rural Mais S.A."
+    "code":"021",
+    "name":"BANESTES S.A. Banco do Estado do Espírito Santo",
+    "url":"http://www.banestes.com.br/"
   },
   {
-    "code": "453",
-    "name": "Banco Rural S.A."
+    "code":"719",
+    "name":"Banif-Banco Internacional do Funchal (Brasil)S.A.",
+    "url":"http://www.banif.com.br/"
   },
   {
-    "code": "422",
-    "name": "Banco Safra S.A."
+    "code":"",
+    "name":"Banif Banco de Investimento (Brasil) S.A.",
+    "url":"http://www.banif.com.br/"
   },
   {
-    "code": "033",
-    "name": "Banco Santander  (Brasil)  S.A."
+    "code":"755",
+    "name":"Banco Merrill Lynch S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "743",
-    "name": "Banco Semear S.A."
+    "code":"",
+    "name":"Banrisul S/A Corretora de Valores Mobiliários e Câmbio",
+    "url":"http://www.banrisulcorretora.com.br/"
   },
   {
-    "code": "749",
-    "name": "Banco Simples S.A."
+    "code":"",
+    "name":"Barigui Companhia Hipotecária",
+    "url":""
   },
   {
-    "code": "366",
-    "name": "Banco Société Générale Brasil S.A."
+    "code":"",
+    "name":"Barigui S.A. Crédito, Financiamento e Investimentos",
+    "url":"http://www.bariguifinanceira.com.br/"
   },
   {
-    "code": "637",
-    "name": "Banco Sofisa S.A."
+    "code":"",
+    "name":"BB Gestão de Recursos - Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.bb.com.br/bbdtvm"
   },
   {
-    "code": "012",
-    "name": "Banco Standard de Investimentos S.A."
+    "code":"",
+    "name":"BB Banco de Investimento S.A.",
+    "url":"http://www.bb.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Sudameris Investimento S.A."
+    "code":"",
+    "name":"BB Leasing S/A Arrendamento Mercantil",
+    "url":""
   },
   {
-    "code": "464",
-    "name": "Banco Sumitomo Mitsui Brasileiro S.A."
+    "code":"081",
+    "name":"BBN Banco Brasileiro de Negócios S.A.",
+    "url":"http://www.rendimento.com.br/"
   },
   {
-    "code": "082-5",
-    "name": "Banco Topázio S.A."
+    "code":"496",
+    "name":"Banco Uno - E Brasil S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "M20",
-    "name": "Banco Toyota do Brasil S.A."
+    "code":"250",
+    "name":"BCV - Banco de Crédito e Varejo S.A.",
+    "url":"http://www.bancobcv.com.br/"
   },
   {
-    "code": "634",
-    "name": "Banco Triângulo S.A."
+    "code":"",
+    "name":"BEC Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":""
   },
   {
-    "code": "018",
-    "name": "Banco Tricury S.A."
+    "code":"",
+    "name":"BEM - Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":""
   },
   {
-    "code": "M14",
-    "name": "Banco Volkswagen S.A."
+    "code":"",
+    "name":"Besc-Distribuidora de Títulos e Valores Mobiliários SA-Bescval",
+    "url":""
   },
   {
-    "code": "M23",
-    "name": "Banco Volvo (Brasil) S.A."
+    "code":"144",
+    "name":"BEXS Banco de Câmbio S.A.",
+    "url":"http://www.bexs.com.br/"
   },
   {
-    "code": "655",
-    "name": "Banco Votorantim S.A."
+    "code":"",
+    "name":"Bexs Corretora de Câmbio S/A",
+    "url":"http://www.bexscorretora.com.br/"
   },
   {
-    "code": "610",
-    "name": "Banco VR S.A."
+    "code":"",
+    "name":"BMC Asset Management - Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.bmc.com.br/"
   },
   {
-    "code": "119",
-    "name": "Banco Western Union do Brasil S.A."
+    "code":"",
+    "name":"BMG Leasing S.A. - Arrendamento Mercantil",
+    "url":"http://www.bancobmg.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Woori Bank do Brasil S.A."
+    "code":"",
+    "name":"BMW Financeira S.A. - Crédito, Financiamento e Investimento",
+    "url":"http://www.bmwfs.com.br/"
   },
   {
-    "code": "",
-    "name": "Banco Yamaha Motor S.A."
+    "code":"",
+    "name":"BMW Leasing do Brasil S.A. - Arrendamento Mercantil",
+    "url":"http://www.bmwfs.com.br/"
   },
   {
-    "code": "021",
-    "name": "BANESTES S.A. Banco do Estado do Espírito Santo"
+    "code":"017",
+    "name":"BNY Mellon Banco S.A.",
+    "url":"http://www.bnymellon.com.br/"
   },
   {
-    "code": "",
-    "name": "Banif Brasil BI S.A."
+    "code":"",
+    "name":"BNY Mellon Serviços Financeiros Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.bnymellon.com.br/"
   },
   {
-    "code": "719",
-    "name": "Banif-Banco Internacional do Funchal (Brasil)S.A."
+    "code":"126",
+    "name":"BR Partners Banco de Investimento S.A.",
+    "url":"http://www.brap.com.br/"
   },
   {
-    "code": "755",
-    "name": "Bank of America Merrill Lynch Banco Múltiplo S.A."
+    "code":"",
+    "name":"BR Partners Corretora de Títulos e Valores Mobiliários S.A.",
+    "url":""
   },
   {
-    "code": "744",
-    "name": "BankBoston N.A."
+    "code":"",
+    "name":"Bradesco Leasing S.A. Arrecadamento Mercantil",
+    "url":""
   },
   {
-    "code": "",
-    "name": "BB BANCO DE INVESTIMENTO S.A. - BB"
+    "code":"",
+    "name":"Bradesco S.A. Corretora de Títulos e Valores Mobiliários",
+    "url":""
   },
   {
-    "code": "073",
-    "name": "BB Banco Popular do Brasil S.A."
+    "code":"",
+    "name":"Bradesco-Kirton Corretora de Títulos e Valores Mobiliários S.A.",
+    "url":""
   },
   {
-    "code": "250",
-    "name": "BCV - Banco de Crédito e Varejo S.A."
+    "code":"",
+    "name":"BRAM - Bradesco Asset Management S.A. Distribuidora de Títulos e Valores Mobiliários",
+    "url":""
   },
   {
-    "code": "078",
-    "name": "BES Investimento do Brasil S.A.-Banco de Investimento"
+    "code":"",
+    "name":"Brasil Plural Corretora de Câmbio, Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.brasilplural.com/"
   },
   {
-    "code": "",
-    "name": "BMW Financeira"
+    "code":"",
+    "name":"Banco Prime S.A.",
+    "url":""
   },
   {
-    "code": "",
-    "name": "BNY Mellon Banco S.A."
+    "code":"070",
+    "name":"BRB - Banco de Brasília S.A.",
+    "url":"http://www.brb.com.br/"
   },
   {
-    "code": "069",
-    "name": "BPN Brasil Banco Múltiplo S.A."
+    "code":"",
+    "name":"BRB - Crédito, Financiamento e Investimento S.A.",
+    "url":""
   },
   {
-    "code": "",
-    "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A."
+    "code":"",
+    "name":"BRB - Distribuidora de Títulos e Valores Mobiliários SA",
+    "url":"http://www.brb.com.br/"
   },
   {
-    "code": "",
-    "name": "BR PARTNERS BANCO DE INVESTIMENTO S.A."
+    "code":"737",
+    "name":"Banco Theca S.A.",
+    "url":""
   },
   {
-    "code": "125",
-    "name": "Brasil Plural S.A. - Banco Múltiplo"
+    "code":"225",
+    "name":"Banco Brascan S.A.",
+    "url":"http://www.bancobrascan.com.br/"
   },
   {
-    "code": "070",
-    "name": "BRB - Banco de Brasília S.A."
+    "code":"",
+    "name":"BTG Pactual Asset Management S.A. Distribuidora de Títulos e Valores Mobiliários",
+    "url":"http://www.btgpactual.com/"
   },
   {
-    "code": "",
-    "name": "BRB - Crédito, Financiamento e Investimento S.A."
+    "code":"211",
+    "name":"Banco Sistema S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "092-2",
-    "name": "Brickell S.A. Crédito, financiamento e Investimento"
+    "code":"",
+    "name":"BTG Pactual Serviços Financeiros S.A. Distribuidora de Títulos e Valores Mobiliários",
+    "url":"http://www.btgpactual.com/"
   },
   {
-    "code": "",
-    "name": "BV Financeira S.A. - CFI"
+    "code":"",
+    "name":"BV Financeira S.A. - Crédito, Financiamento e Investimento",
+    "url":"http://www.bvfinanceira.com.br/"
   },
   {
-    "code": "104",
-    "name": "Caixa Econômica Federal"
+    "code":"",
+    "name":"BV Leasing - Arrendamento Mercantil S.A.",
+    "url":"http://www.xn--votorantimfinanas-osb.com.br/"
   },
   {
-    "code": "114-7",
-    "name": "Central das Coop. de Economia e Crédito Mutuo do Est. do ES"
+    "code":"",
+    "name":"Ca Indosuez Wealth (Brazil) S.A. Distribuidora de Títulos e Valores Mobiliários",
+    "url":"http://www.creditagricoledtvm.com.br/"
   },
   {
-    "code": "477",
-    "name": "Citibank S.A."
+    "code":"104",
+    "name":"Caixa Econômica Federal",
+    "url":"http://www.caixa.gov.br/"
   },
   {
-    "code": "",
-    "name": "Companhia de Crédito, Financ. e Investimento RCI Brasil"
+    "code":"",
+    "name":"CCB Brasil Arrendamento Mercantil S/A",
+    "url":""
   },
   {
-    "code": "081-7",
-    "name": "Concórdia Banco S.A."
+    "code":"",
+    "name":"CCB Brasil Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":""
   },
   {
-    "code": "097-3",
-    "name": "Cooperativa Central de Crédito Noroeste Brasileiro Ltda."
+    "code":"",
+    "name":"CGD Investimentos Corretora de Valores e Câmbio S.A.",
+    "url":""
   },
   {
-    "code": "085-x",
-    "name": "Cooperativa Central de Crédito Urbano-CECRED"
+    "code":"320",
+    "name":"China Construction Bank (Brasil) Banco Múltiplo S.A.",
+    "url":"http://www.br.ccb.com/"
   },
   {
-    "code": "099-x",
-    "name": "Cooperativa Central de Economia e Credito Mutuo das Unicreds"
+    "code":"",
+    "name":"Cifra S.A. Crédito, Financiamento e Investimento",
+    "url":"http://www.bancocifra.com.br/"
   },
   {
-    "code": "090-2",
-    "name": "Cooperativa Central de Economia e Crédito Mutuo das Unicreds"
+    "code":"",
+    "name":"Citibank Distribuidora de Títulos e Valores Mobiliários S.A",
+    "url":"http://www.citibank.com.br/"
   },
   {
-    "code": "089-2",
-    "name": "Cooperativa de Crédito Rural da Região de Mogiana"
+    "code":"",
+    "name":"Citibank Leasing S.A - Arrendamento Mercantil",
+    "url":"http://www.citibank.com.br/"
   },
   {
-    "code": "087-6",
-    "name": "Cooperativa Unicred Central Santa Catarina"
+    "code":"477",
+    "name":"Citibank N.A.",
+    "url":"http://www.citibank.com/"
   },
   {
-    "code": "098-1",
-    "name": "CREDIALIANÇA COOPERATIVA DE CRÉDITO RURAL"
+    "code":"",
+    "name":"Citigroup Global Markets Brasil, Corretora de Câmbio, Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.citibank.com.br/"
   },
   {
-    "code": "487",
-    "name": "Deutsche Bank S.A. - Banco Alemão"
+    "code":"",
+    "name":"CM Capital Markets Corretora de Câmbio, Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.cmcapitalmarkets.com.br/"
   },
   {
-    "code": "",
-    "name": "Finamax S/A C. F. I."
+    "code":"",
+    "name":"CM Capital Markets Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.cmcapitalmarkets.com.br/"
   },
   {
-    "code": "064",
-    "name": "Goldman Sachs do Brasil Banco Múltiplo S.A."
+    "code":"",
+    "name":"COIN-Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.coinvalores.com.br/"
   },
   {
-    "code": "062",
-    "name": "Hipercard Banco Múltiplo S.A."
+    "code":"",
+    "name":"Coinvalores Corretora de Câmbio e Valores Mobiliários LTDA.",
+    "url":"http://www.coinvalores.com.br/"
   },
   {
-    "code": "399",
-    "name": "HSBC Bank Brasil S.A. - Banco Múltiplo"
+    "code":"163",
+    "name":"Commerzbank Brasil S.A. - Banco Múltiplo",
+    "url":"http://www.commerzbank.com.br/"
   },
   {
-    "code": "168",
-    "name": "HSBC Finance (Brasil) S.A. - Banco Múltiplo"
+    "code":"",
+    "name":"Companhia Hipotecária Piratini - CHP",
+    "url":"http://www.chphipotecaria.com.br/"
   },
   {
-    "code": "",
-    "name": "ICBC DO BRASIL BANCO MULTIPLO S.A. - ICBC DO BRASIL"
+    "code":"",
+    "name":"Companhia Província de Crédito Imobiliário",
+    "url":"http://www.ciaprovincia.com.br/"
   },
   {
-    "code": "492",
-    "name": "ING Bank N.V."
+    "code":"",
+    "name":"Confidence Corretora de Câmbio S.A.",
+    "url":"http://www.confidencecambio.com.br/"
   },
   {
-    "code": "652",
-    "name": "Itaú Unibanco Holding S.A."
+    "code":"",
+    "name":"Cotação Distribuidora de Títulos e Valores Mobiliários S.A",
+    "url":"http://www.cotacao.com.br/"
   },
   {
-    "code": "341",
-    "name": "Itaú Unibanco S.A."
+    "code":"",
+    "name":"Crediare S.A. Crédito, Financiamento e Investimento",
+    "url":"http://www.crediare.com.br/"
   },
   {
-    "code": "",
-    "name": "J. Malucelli"
+    "code":"",
+    "name":"Credit Suisse (Brasil) S.A. Corretora de Títulos e Valores Mobiliários",
+    "url":""
   },
   {
-    "code": "488",
-    "name": "JPMorgan Chase Bank"
+    "code":"",
+    "name":"Credit Suisse Hedging-Griffo Corretora de Valores S.A",
+    "url":"http://www.cshg.com.br/"
   },
   {
-    "code": "014",
-    "name": "Natixis Brasil S.A. Banco Múltiplo"
+    "code":"",
+    "name":"Dacasa Financeira S.A.-Soc. de Créd. Financ. e Investimento",
+    "url":"http://www.dacasa.com.br/"
   },
   {
-    "code": "753",
-    "name": "NBC Bank Brasil S.A. - Banco Múltiplo"
+    "code":"",
+    "name":"Banco Commercial Investment Trus do Brasil S.A.",
+    "url":""
   },
   {
-    "code": "086-8",
-    "name": "OBOE Crédito Financiamento e Investimento S.A."
+    "code":"487",
+    "name":"Deutsche Bank S.A. - Banco Alemão",
+    "url":"http://www.deutsche-bank.com.br/"
   },
   {
-    "code": "",
-    "name": "Omni S.A. Crédito Financiamento Investimento"
+    "code":"",
+    "name":"Dibens Leasing S.A. Arrendamento Mercantil",
+    "url":"http://www.itau.com.br/"
   },
   {
-    "code": "254",
-    "name": "Paraná Banco S.A."
+    "code":"",
+    "name":"Distribuidora Intercap de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.intercap.com.br/"
   },
   {
-    "code": "",
-    "name": "Santana S.A. Crédito, Financiamento e Investimento"
+    "code":"",
+    "name":"Estrela Mineira Crédito, Financiamento e Investimento S/A",
+    "url":""
   },
   {
-    "code": "",
-    "name": "Scania Banco S.A."
+    "code":"",
+    "name":"Fator S.A. - Corretora de Valores",
+    "url":"http://www.bancofator.com.br/"
   },
   {
-    "code": "751",
-    "name": "Scotiabank Brasil S.A. Banco Múltiplo"
+    "code":"",
+    "name":"Finamax S.A. - Crédito, Financiamento e Investimento",
+    "url":"http://www.finamax.com.br/"
   },
   {
-    "code": "",
-    "name": "Standard Chartered Bank (Brasil) S/A–Bco Invest."
+    "code":"",
+    "name":"Financeira Alfa S.A. Crédito, Financiamento e Investimentos",
+    "url":"http://www.alfanet.com.br/"
   },
   {
-    "code": "",
-    "name": "Sul Financeira S/A - Crédito, Financiamentos e Investimentos"
+    "code":"",
+    "name":"Financeira Itaú CBD S.A. Crédito, Financiamento e Investimento",
+    "url":"http://www.itau.com.br/"
   },
   {
-    "code": "",
-    "name": "UAM - Assessoria e Gestão"
+    "code":"725",
+    "name":"Finansinos S.A. - Crédito, Financ. e Investimento",
+    "url":"http://xn--no%20possui%20site-1sb/"
   },
   {
-    "code": "",
-    "name": "UBS Brasil Banco de Investimento S.A."
+    "code":"",
+    "name":"Finaxis Corretora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.personaltrader.com.br/"
   },
   {
-    "code": "409",
-    "name": "UNIBANCO - União de Bancos Brasileiros S.A."
+    "code":"",
+    "name":"Gazincred S.A. Sociedade de Crédito, Financiamento e Investimento",
+    "url":"http://www.gazincred.com.br/"
   },
   {
-    "code": "230",
-    "name": "Unicard Banco Múltiplo S.A."
+    "code":"",
+    "name":"Geração Futuro Corretora de Valores SA.",
+    "url":"http://www.gerafuturo.com.br/"
   },
   {
-    "code": "091-4",
-    "name": "Unicred Central do Rio Grande do Sul"
+    "code":"",
+    "name":"Golcred S/A - Crédito, Financiamento e Investimento",
+    "url":"http://www.golcred.com.br/"
   },
   {
-    "code": "084",
-    "name": "Unicred Norte do Paraná"
+    "code":"064",
+    "name":"Goldman Sachs do Brasil Banco Múltiplo S.A.",
+    "url":"http://www.goldmansachs.com/"
+  },
+  {
+    "code":"",
+    "name":"Goldman Sachs do Brasil Corretora de Títulos e Valores Mobiliárias S.A.",
+    "url":"http://www.gs.com/"
+  },
+  {
+    "code":"135",
+    "name":"Gradual Corretora de Câmbio,Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.gradualcorretora.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Guide Investimentos S.A. - Corretora de Valores",
+    "url":"http://www.indusval.com.br/"
+  },
+  {
+    "code":"",
+    "name":"H H Picchioni S/A Corretora de Câmbio e Valores Mobiliários",
+    "url":"http://www.picchioni.com.br/"
+  },
+  {
+    "code":"078",
+    "name":"Haitong Banco de Investimento do Brasil S.A.",
+    "url":"http://www.haitongib.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Haitong do Brasil Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.haitongib.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Haitong Securities do Brasil Corretora de Câmbio e Valores Mobiliários S.A.",
+    "url":"http://www.haitongib.com.br/"
+  },
+  {
+    "code":"062",
+    "name":"Hipercard Banco Múltiplo S.A.",
+    "url":"http://www.hipercard.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Honda Leasing S.A. - Arrendamento Mercantil",
+    "url":"http://www.hondaleasing.com.br/"
+  },
+  {
+    "code":"",
+    "name":"HS Financeira S/A Crédito, Financiamento e Investimentos",
+    "url":"http://www.hsfinanceira.com.br/"
+  },
+  {
+    "code":"",
+    "name":"HSBC Brasil S.A. - Banco de Investimento",
+    "url":""
+  },
+  {
+    "code":"132",
+    "name":"ICBC do Brasil Banco Múltiplo S.A.",
+    "url":"http://www.icbcbr.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Industrial do Brasil Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.bancoindustrial.com.br/"
+  },
+  {
+    "code":"492",
+    "name":"ING Bank N.V.",
+    "url":"http://www.ing.com/"
+  },
+  {
+    "code":"",
+    "name":"ING Corretora de Câmbio e Títulos S.A.",
+    "url":"http://www.ing.com/"
+  },
+  {
+    "code":"",
+    "name":"Intermedium Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.intermedium.com.br/"
+  },
+  {
+    "code":"139",
+    "name":"Intesa Sanpaolo Brasil S.A. - Banco Múltiplo",
+    "url":"http://www.intesasanpaolobrasil.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Intrag Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.intrag.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Itaú Corretora de Valores S.A.",
+    "url":"http://www.itaucor.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Itaú Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.itau.com.br/"
+  },
+  {
+    "code":"346",
+    "name":"Banco Francês e Brasileiro S.A.",
+    "url":"http://xn--no%20possui%20site-1sb/"
+  },
+  {
+    "code":"341",
+    "name":"Itaú Unibanco S.A.",
+    "url":"http://www.itau.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Itauvest Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.itau.com.br/"
+  },
+  {
+    "code":"",
+    "name":"J. Malucelli Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.paranaasset.com/"
+  },
+  {
+    "code":"",
+    "name":"J. Safra Corretora de Valores e Câmbio LTDA",
+    "url":"http://www.safra.com.br/"
+  },
+  {
+    "code":"",
+    "name":"J.P. Morgan Corretora de Câmbio e Valores Mobiliários S.A.",
+    "url":"http://www.jpmorgan.com/"
+  },
+  {
+    "code":"",
+    "name":"J.P. Morgan S.A. - Distribuidora de Títulos e Valores Mobiliários",
+    "url":"http://www.jpmorgan.com/"
+  },
+  {
+    "code":"",
+    "name":"John Deere Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":""
+  },
+  {
+    "code":"488",
+    "name":"JPMorgan Chase Bank, National Association",
+    "url":"http://www.jpmorganchase.com/"
+  },
+  {
+    "code":"",
+    "name":"Lecca Crédito, Financiamento e Investimento S/A",
+    "url":"http://www.lecca.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Lecca Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.leccadtvm.com.br/"
+  },
+  {
+    "code":"",
+    "name":"LLA - Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.lla.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Luizacred S.A. Sociedade de Crédito, Financiamento e Investimento",
+    "url":"http://www.itau.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Máxima S.A. Corretora de Câmbio, Títulos e Valores Mobiliários",
+    "url":"http://www.maximacctvm.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Mercantil do Brasil Corretora S.A. - Câmbio, Títulos e Valores Mobiliários",
+    "url":"http://www.mercantil.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Mercantil do Brasil Distribuidora S.A. - Títulos e Valores Mobiliários",
+    "url":"http://www.mercantil.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Mercantil do Brasil Financeira S.A - Crédito, Financiamento e Investimentos",
+    "url":"http://www.mercantil.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Mercedes-Benz Leasing do Brasil Arrendamento Mercantil S.A.",
+    "url":"http://www.bancomercedesbenz.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Merrill Lynch S.A. Corretora de Títulos e Valores Mobiliários",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Microinvest S.A. Sociedade de Crédito ao Microempreendedor",
+    "url":"http://www.itau.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Modal Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.modalmais.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Morgan Stanley Corretora de Títulos e Valores Mobiliários S.A.",
+    "url":""
+  },
+  {
+    "code":"128",
+    "name":"MS Bank S.A. Banco de Câmbio",
+    "url":"http://www.msbank.com.br/"
+  },
+  {
+    "code":"014",
+    "name":"Natixis Brasil S.A. Banco Múltiplo",
+    "url":"http://www.br.natixis.com/"
+  },
+  {
+    "code":"753",
+    "name":"Novo Banco Continental S.A. - Banco Múltiplo",
+    "url":"http://www.nbcbank.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Omni SA Crédito Financiamento Investimento",
+    "url":"http://www.omni.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Omni S.A. Arrendamento Mercantil",
+    "url":"http://www.omni.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Ourinvest Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.ourinvest.com.br/pt"
+  },
+  {
+    "code":"",
+    "name":"PAN Arrendamento Mercantil S.A.",
+    "url":"http://www.bancopan.com.br/"
+  },
+  {
+    "code":"254",
+    "name":"Paraná Banco S.A.",
+    "url":"http://www.paranabanco.com.br/"
+  },
+  {
+    "code":"",
+    "name":"PBM - Picchioni - Belgo - Mineira Distribuidora de Títulos e Valres Mobiliários S/A",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Pernambucanas Financiadora S.A. - Crédito, Financiamento e Investimento",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Pine Investimentos Distribuidoras de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.bancopine.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Planner Corretora de Valores S.A.",
+    "url":"http://www.planner.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Planner Sociedade de Crédito ao Microempreendedor S.A.",
+    "url":"http://www.planner.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Planner Trustee Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.planner.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Portopar Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.portopar.com.br/"
+  },
+  {
+    "code":"",
+    "name":"PortoSeg S.A. - Crédito, Financiamento e Investimento",
+    "url":"http://www.portofinanciamento.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Positiva Corretora de Câmbio, Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.positivadtvm.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Safra Leasing S.A. Arrendamento Mercantil",
+    "url":"http://www.safra.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santana S.A. - Crédito, Financiamento e Investimento",
+    "url":"http://www.santana-shopcred.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santander Brasil Asset Manag Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.santander.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santander Corretora de Câmbio e Valores Mobiliários S.A.",
+    "url":"http://www.santander.com.br/"
+  },
+  {
+    "code":"",
+    "name":"PSA Finance Arrendamento Mercantil S.A.",
+    "url":"http://www.bancopsa.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santander Leasing S.A. Arrendamento Mercantil",
+    "url":"http://www.santander.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santander Securities Services Brasil Distribuidora de Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.santander.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Santinvest S.A - Crédito, Financiamento e Investimentos",
+    "url":"http://www.santinvest.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Scania Banco S.A.",
+    "url":"http://www.scaniabanco.com.br/"
+  },
+  {
+    "code":"751",
+    "name":"Scotiabank Brasil S.A. Banco Múltiplo",
+    "url":"http://www.br.scotiabank.com/"
+  },
+  {
+    "code":"",
+    "name":"SG Equipment Finance S.A. Arrendamento Mercantil",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Sinosserra Financeira S/A - Sociedade de Crédito, Financiamento e Investimento",
+    "url":"http://www.sinosserrafinanceira.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Socopa Sociedade Corretora Paulista S.A.",
+    "url":"http://www.socopa.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Sofisa S.A. Crédito, Financiamento e Investimento",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Standard Chartered Bank (Brasil) S/A – Banco de In",
+    "url":"http://www.standardchartered.com/"
+  },
+  {
+    "code":"129",
+    "name":"UBS Brasil Banco de Investimento S.A.",
+    "url":"http://www.ubs.com/"
+  },
+  {
+    "code":"",
+    "name":"UBS Brasil Corretora de Câmbio, Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.ubs.com/br/pt/ubs_corretora.html"
+  },
+  {
+    "code":"",
+    "name":"Uniletra Corretora de Câmbio, Títulos e Valores Mobiliários S.A.",
+    "url":"http://www.uniletra.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Votorantim - Corretora de Títulos e Valores Mobiliários LTDA.",
+    "url":"http://www.votorantimfinancas.com.br/"
+  },
+  {
+    "code":"",
+    "name":"Votorantim Asset Management Distribuidora de Títulos e Valores Mobiliários LTDA",
+    "url":"http://www.vam.com.br/"
+  },
+  {
+    "code":"",
+    "name":"VR Distribuidora de Títulos e Valores Mobiliários LTDA.",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"Western Union Corretora de Câmbio S.A.",
+    "url":""
+  },
+  {
+    "code":"",
+    "name":"XP Investimentos Corretora de Câmbio, Títulos e Valores Mobiliários S/A",
+    "url":"http://www.xpi.com.br/"
   }
 ]
