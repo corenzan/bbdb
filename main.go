@@ -14,7 +14,7 @@ import (
 type Record struct {
 	Name string `json:"name"`
 	Code string `json:"code"`
-	URL string `json:"url"`
+	URL  string `json:"url"`
 }
 
 var database []Record
@@ -50,7 +50,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	var results []Record
 	for _, record := range database {
 		pattern := matcher.CompileString(query)
-		if i, _ := pattern.IndexString(record.Name); i > -1 {
+		if i, _ := pattern.IndexString(record.Code + " " + record.Name); i > -1 {
 			results = append(results, record)
 		}
 	}
