@@ -1,1 +1,1 @@
-web: brazilian-banks-api
+web: brazilian-banks-api -port $PORT
