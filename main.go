@@ -2,12 +2,12 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"golang.org/x/text/language"
 	"golang.org/x/text/search"
 	"io/ioutil"
 	"log"
 	"net/http"
-	"os"
 	"time"
 )
 
@@ -72,6 +72,10 @@ func main() {
 
 	matcher = search.New(language.BrazilianPortuguese, search.Loose)
 
+	var port string
+	flag.StringVar(&port, "port", "8080", "where the server will listen to")
+	flag.Parse()
+
 	log.Println("Listening...")
-	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), http.HandlerFunc(handler)))
+	log.Fatal(http.ListenAndServe(":"+port, http.HandlerFunc(handler)))
 }
