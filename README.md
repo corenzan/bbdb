@@ -1,59 +1,52 @@
 # Brazilian Banks API
 
-> Query names and codes of banks in Brazil.
+> Query banks names and codes in Brazil.
 
 ## Example
 
-#### Request
+### Request
 
 ```
-GET /?q=itau HTTP/1.1
-Accept: */*
+GET /?q=itau&compact=yes HTTP/1.1
 Host: brazilian-banks-api.herokuapp.com
+Accept: */*
 ```
 
-#### Response
+### Response
 
 ```
 HTTP/1.1 200 OK
-Access-Control-Allow-Origin: *
-Content-Length: 330
-Content-Type: application/json
-Date: Tue, 12 Sep 2017 23:00:44 GMT
+Access-Control-Allow-Origin: : *
+Content-Type: application/json; charset=utf-8
+Etag: 0ee55f76a1ec068837b939821e96d3de
+Content-Length: 382
 
 [
-    {
-        "code": "184",
-        "name": "Banco Itaú BBA S.A."
-    },
-    {
-        "code": "479",
-        "name": "Banco ItaúBank S.A"
-    },
-    {
-        "code": "",
-        "name": "Banco Itaucard S.A."
-    },
-    {
-        "code": "M09",
-        "name": "Banco Itaucred Financiamentos S.A."
-    },
-    {
-        "code": "",
-        "name": "Banco ITAULEASING S.A."
-    },
-    {
-        "code": "652",
-        "name": "Itaú Unibanco Holding S.A."
-    },
-    {
-        "code": "341",
-        "name": "Itaú Unibanco S.A."
-    }
+  {
+    "name": "Banco Itaú BBA S.A.",
+    "code": "184",
+    "url": "http://www.itaubba.com.br/"
+  },
+  { "name": "Banco Itaú Consignado S.A.", "code": "029", "url": "" },
+  {
+    "name": "Banco ItauBank S.A",
+    "code": "479",
+    "url": "http://www.itaubank.com.br/"
+  },
+  {
+    "name": "Itaú Unibanco Holding S.A.",
+    "code": "652",
+    "url": "http://www.itau.com.br/"
+  },
+  {
+    "name": "Itaú Unibanco S.A.",
+    "code": "341",
+    "url": "http://www.itau.com.br/"
+  }
 ]
 ```
 
-Optionally you can omit the `q` parameter to get a list of all banks.
+Optionally you can omit the `q` parameter to get a full list of all banks.
 
 ## API
 
@@ -64,13 +57,9 @@ The endpoint is `https://brazilian-banks-api.herokuapp.com`.
   <dd>Returns the whole list.</dd>
   <dt><code>GET /?q=...</code></dt>
   <dd>Filter the list by partial match, ignoring accents and special characters.</dd>
+  <dt><code>GET /?compact=on|yes|true|1</code></dt>
+  <dd>Exclude banks with blank codes.</dd>
 </dl>
-
-## Developer's Note
-
-```js
-document.write(JSON.stringify(Array.from(document.querySelectorAll('td>a[href^="AgenciasRegioes.asp?"]')).map((a) => { const site = a.parentElement.nextElementSibling.querySelector('a:not([href="http://"])');return {code: a.parentElement.previousElementSibling.textContent.trim(), name:a.textContent.trim(), url: (site ? site.href : '')}; })));
-```
 
 ## Reference
 
