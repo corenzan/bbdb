@@ -1,14 +1,20 @@
 package main
 
 import (
+	"bytes"
+	"crypto/md5"
+	"encoding/gob"
 	"encoding/json"
 	"flag"
-	"golang.org/x/text/language"
-	"golang.org/x/text/search"
+	"fmt"
 	"io/ioutil"
 	"log"
 	"net/http"
+	"regexp"
 	"time"
+
+	"golang.org/x/text/language"
+	"golang.org/x/text/search"
 )
 
 type Record struct {
@@ -17,48 +23,66 @@ type Record struct {
 	URL  string `json:"url"`
 }
 
+var boolPat = regexp.MustCompile("^(on|yes|true|1)$")
 var database []Record
 var matcher *search.Matcher
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	start := time.Now()
+func hash(i interface{}) [16]byte {
+	var b bytes.Buffer
+	gob.NewEncoder(&b).Encode(i)
+	return md5.Sum(b.Bytes())
+}
 
+func handler(w http.ResponseWriter, r *http.Request) {
 	if r.URL.Path != "/" {
 		http.NotFound(w, r)
 		return
 	}
 
 	if err := r.ParseForm(); err != nil {
-		log.Fatal(err)
-	}
-
-	if _, ok := r.Form["q"]; !ok {
-		json.NewEncoder(w).Encode(database)
+		log.Print("ParseForm():", err)
+		http.Error(w, "", http.StatusInternalServerError)
 		return
 	}
 
-	query := r.Form.Get("q")
+	results := []Record{}
 
+	query := r.FormValue("q")
 	if query == "" {
-		w.WriteHeader(http.StatusBadRequest)
-		return
+		results = database
+	} else {
+		for _, record := range database {
+			match := matcher.CompileString(query)
+			if i, _ := match.IndexString(record.Code + " " + record.Name); i > -1 {
+				results = append(results, record)
+			}
+		}
 	}
+
+	compact := r.FormValue("compact")
+	if boolPat.MatchString(compact) {
+		compacted := results[:0]
+		for _, record := range results {
+			if record.Code != "" {
+				compacted = append(compacted, record)
+			}
+		}
+		results = compacted
+	}
+
+	w.Header().Set("ETag", fmt.Sprintf("%x", hash(results)))
+	json.NewEncoder(w).Encode(results)
+}
+
+func middleware(w http.ResponseWriter, r *http.Request) {
+	checkpoint := time.Now()
 
 	w.Header().Set("Content-Type", "application/json; charset=utf-8")
 	w.Header().Set("Access-Control-Allow-Origin:", "*")
 
-	var results []Record
-	for _, record := range database {
-		pattern := matcher.CompileString(query)
-		if i, _ := pattern.IndexString(record.Code + " " + record.Name); i > -1 {
-			results = append(results, record)
-		}
-	}
-	json.NewEncoder(w).Encode(results)
+	handler(w, r)
 
-	w.Header().Set("ETag", "")
-
-	log.Println(r.Method, r.URL.Path, r.Form.Encode(), time.Since(start))
+	log.Println(r.Method, r.URL.Path, r.Form.Encode(), time.Since(checkpoint))
 }
 
 func main() {
@@ -72,10 +96,9 @@ func main() {
 
 	matcher = search.New(language.BrazilianPortuguese, search.Loose)
 
-	var port string
-	flag.StringVar(&port, "port", "8080", "where the server will listen to")
+	var addr string
+	flag.StringVar(&addr, "addr", "8080", "address the server will bind to")
 	flag.Parse()
 
-	log.Println("Listening...")
-	log.Fatal(http.ListenAndServe(":"+port, http.HandlerFunc(handler)))
+	log.Fatal(http.ListenAndServe(addr, http.HandlerFunc(middleware)))
 }
