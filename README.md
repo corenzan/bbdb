@@ -71,13 +71,7 @@ $ go mod download
 
 See [Makefile](Makefile) for build tasks.
 
-### Generate Database File
-
-The same binary of the server can generate a new `database.json` from the CSV Febraban provides.
-
-```shell
-$ ./bbdb -src file.csv
-```
+The data is loaded from disk. The expected format is a CSV.
 
 ## Reference
 
