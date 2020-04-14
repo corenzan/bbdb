@@ -129,7 +129,7 @@ func main() {
 	)
 
 	flag.StringVar(&addr, "addr", ":8080", "Address the server will bind to")
-	flag.StringVar(&src, "src", "data.csv", "Path to CSV data source")
+	flag.StringVar(&src, "src", "database.csv", "Path to CSV data source")
 	flag.Parse()
 
 	loadDataSrc(src)
