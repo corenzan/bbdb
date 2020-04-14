@@ -1,6 +1,6 @@
 # BBDb
 
-> Free open-source database of banks in Brazil.
+> Free, open-source API for querying banks in Brazil.
 
 ## Example
 
