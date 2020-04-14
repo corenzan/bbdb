@@ -1,6 +1,6 @@
-# Brazilian Banks API
+# BBDb
 
-> Query banks names and codes in Brazil.
+> Free open-source database of banks in Brazil.
 
 ## Example
 
@@ -50,7 +50,7 @@ Optionally you can omit the `q` parameter to get a full list of all banks.
 
 ## API
 
-The endpoint is `https://brazilian-banks-api.herokuapp.com`.
+The endpoint is `https://bbdb.crz.li`.
 
 <dl>
   <dt><code>GET /</code></dt>
@@ -61,10 +61,28 @@ The endpoint is `https://brazilian-banks-api.herokuapp.com`.
   <dd>Exclude banks with blank codes.</dd>
 </dl>
 
+## Development
+
+You'll need Go 1.14.2+. Clone and download dependencies.
+
+```shell
+$ go mod download
+```
+
+See [Makefile](Makefile) for build tasks.
+
+### Generate Database File
+
+The same binary of the server can generate a new `database.json` from the CSV Febraban provides.
+
+```shell
+$ ./bbdb -src file.csv
+```
+
 ## Reference
 
-1. [http://www.febraban.org.br/bancos.asp](http://www.febraban.org.br/bancos.asp)
+1. [Febraban](https://portal.febraban.org.br/pagina/3164/12/pt-br/associados)
 
 ## License
 
-The MIT License &copy; Arthur Corenzan 2017
+The MIT License © 2014 Arthur Corenzan
