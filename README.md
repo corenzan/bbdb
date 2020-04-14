@@ -7,9 +7,7 @@
 ### Request
 
 ```
-GET /?q=itau&compact=yes HTTP/1.1
-Host: brazilian-banks-api.herokuapp.com
-Accept: */*
+curl https://bbdb.crz.li/?q=itau&compact=yes
 ```
 
 ### Response
@@ -46,7 +44,7 @@ Content-Length: 382
 ]
 ```
 
-Optionally you can omit the `q` parameter to get a full list of all banks.
+The `compact` parameter exclude items with a blank `code` field. Optionally you can omit the `q` parameter to get a full list of all banks.
 
 ## API
 
@@ -56,7 +54,7 @@ The endpoint is `https://bbdb.crz.li`.
   <dt><code>GET /</code></dt>
   <dd>Returns the whole list.</dd>
   <dt><code>GET /?q=...</code></dt>
-  <dd>Filter the list by partial match, ignoring accents and special characters.</dd>
+  <dd>Filter the list by partial match. Normalizes special characters.</dd>
   <dt><code>GET /?compact=on|yes|true|1</code></dt>
   <dd>Exclude banks with blank codes.</dd>
 </dl>
@@ -71,7 +69,7 @@ $ go mod download
 
 See [Makefile](Makefile) for build tasks.
 
-The data is loaded from disk. The expected format is a CSV.
+The data is loaded from disk. The expected format is a CSV using `;` as separator.
 
 ## Reference
 
