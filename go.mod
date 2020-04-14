@@ -1,3 +1,5 @@
-module github.com/haggen/brazilian-banks-api
+module github.com/corenzan/bbdb
 
-require golang.org/x/text v0.3.0
+require golang.org/x/text v0.3.2
+
+go 1.14

@@ -23,7 +23,7 @@ type Record struct {
 	URL  string `json:"url"`
 }
 
-var boolPat = regexp.MustCompile("^(on|yes|true|1)$")
+var boolExpr = regexp.MustCompile("^(on|yes|true|1)$")
 var database []Record
 var matcher *search.Matcher
 
@@ -60,7 +60,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	compact := r.FormValue("compact")
-	if boolPat.MatchString(compact) {
+	if boolExpr.MatchString(compact) {
 		compacted := results[:0]
 		for _, record := range results {
 			if record.Code != "" {

@@ -1,1 +1,1 @@
-web: brazilian-banks-api -addr :$PORT
+web: bbdb -addr :${PORT:-8080}

@@ -1,9 +1,9 @@
-run: fmt vet
-	@go run main.go
+build: fmt vet
+	@go build .
 test: fmt vet
 	@go test ./...
 fmt:
 	@go fmt ./...
 vet:
 	@go vet ./...
-.PHONY: run test fmt vet 
+.PHONY: build test fmt vet 
