@@ -3,13 +3,16 @@ package main
 import (
 	"bytes"
 	"crypto/md5"
+	"encoding/csv"
 	"encoding/gob"
 	"encoding/json"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
+	"net/url"
+	"os"
 	"regexp"
 	"time"
 
@@ -24,8 +27,8 @@ type Record struct {
 }
 
 var boolExpr = regexp.MustCompile("^(on|yes|true|1)$")
-var database []Record
-var matcher *search.Matcher
+var matcher = search.New(language.BrazilianPortuguese, search.Loose)
+var database = []*Record{}
 
 func hash(i interface{}) [16]byte {
 	var b bytes.Buffer
@@ -45,7 +48,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	results := []Record{}
+	results := []*Record{}
 
 	query := r.FormValue("q")
 	if query == "" {
@@ -71,6 +74,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Header().Set("ETag", fmt.Sprintf("%x", hash(results)))
+
 	json.NewEncoder(w).Encode(results)
 }
 
@@ -85,20 +89,50 @@ func middleware(w http.ResponseWriter, r *http.Request) {
 	log.Println(r.Method, r.URL.Path, r.Form.Encode(), time.Since(checkpoint))
 }
 
-func main() {
-	bytes, err := ioutil.ReadFile("database.json")
+func loadDataSrc(path string) {
+	file, err := os.Open(path)
 	if err != nil {
-		log.Fatal(err)
+		panic(err)
 	}
-	if err := json.Unmarshal(bytes, &database); err != nil {
-		log.Fatal(err)
+	defer file.Close()
+
+	reader := csv.NewReader(file)
+	reader.Comma = ';'
+
+	for {
+		record, err := reader.Read()
+		if err == io.EOF {
+			break
+		}
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		database = append(database, &Record{
+			Code: record[0],
+			Name: record[1],
+		})
+
+		if len(record) > 2 {
+			if u, err := url.Parse(record[2]); err == nil {
+				u.Scheme = "http"
+				database[len(database)-1].URL = u.String()
+			}
+		}
 	}
+}
 
-	matcher = search.New(language.BrazilianPortuguese, search.Loose)
+func main() {
+	var (
+		addr string
+		src  string
+	)
 
-	var addr string
-	flag.StringVar(&addr, "addr", "8080", "address the server will bind to")
+	flag.StringVar(&addr, "addr", ":8080", "Address the server will bind to")
+	flag.StringVar(&src, "src", "data.csv", "Path to CSV data source")
 	flag.Parse()
+
+	loadDataSrc(src)
 
 	log.Fatal(http.ListenAndServe(addr, http.HandlerFunc(middleware)))
 }
