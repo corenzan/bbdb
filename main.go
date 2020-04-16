@@ -53,8 +53,11 @@ func (w *bufRespWriter) Flush() error {
 	return err
 }
 
-var numericExpr = regexp.MustCompile(`^[0-9]+$`)
-var boolExpr = regexp.MustCompile(`^(y|yes|t|true|1)$`)
+var (
+	numericExpr = regexp.MustCompile(`^[0-9]+$`)
+	boolExpr    = regexp.MustCompile(`^(y|yes|t|true|1)$`)
+	forExpr     = regexp.MustCompile(`(?i)(?:for=)([^(;|,| )]+)`)
+)
 
 func loadAndHashData(path string) ([]*dataRecord, string) {
 	file, err := os.Open(path)
@@ -160,6 +163,26 @@ func cachingHandler(ttl time.Duration, etag string, next http.Handler) http.Hand
 	})
 }
 
+func remoteAddrHandler(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if fwd := r.Header.Get("X-Forwarded-For"); fwd != "" {
+			s := strings.Index(fwd, ", ")
+			if s == -1 {
+				s = len(fwd)
+			}
+			r.RemoteAddr = fwd[:s]
+		} else if fwd := r.Header.Get("X-Real-IP"); fwd != "" {
+			r.RemoteAddr = fwd
+		} else if fwd := r.Header.Get("Forwarded"); fwd != "" {
+			if match := forExpr.FindStringSubmatch(fwd); len(match) > 1 {
+				r.RemoteAddr = strings.Trim(match[1], `"`)
+			}
+		}
+
+		next.ServeHTTP(w, r)
+	})
+}
+
 func bufRespLogHandler(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		b := &bufRespWriter{w, 0, []byte{}}
@@ -189,6 +212,7 @@ func main() {
 	handler := v1APIHandler(database, matcher)
 
 	handler = cachingHandler(time.Hour*24*365, etag, handler)
+	handler = remoteAddrHandler(handler)
 	handler = bufRespLogHandler(handler)
 
 	http.ListenAndServe(listenAddr, handler)
