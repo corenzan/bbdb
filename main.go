@@ -49,6 +49,7 @@ func (w *bufRespWriter) Flush() error {
 	if w.status == 0 {
 		w.status = 200
 	}
+	w.ResponseWriter.WriteHeader(w.status)
 	_, err := w.ResponseWriter.Write(w.buffer)
 	return err
 }
