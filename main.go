@@ -114,7 +114,7 @@ func v1APIHandler(database []*dataRecord, matcher *search.Matcher) http.Handler 
 		}
 
 		w.Header().Set("Content-Type", "application/json; charset=utf-8")
-		w.Header().Set("Access-Control-Allow-Origin:", "*")
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 
 		results := []*dataRecord{}
 
