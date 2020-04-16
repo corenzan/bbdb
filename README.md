@@ -1,62 +1,51 @@
 # BBDb
 
-> Free, open-source API for querying banks in Brazil.
+> Free open-source API for querying banks' numeric code in Brazil.
 
-## Example
+## About
 
-### Request
+Monetary transactions in Brazil, such as transfers and deposits, require a numeric code that identifies the financial institution that manages the destinated account. This numeric code is assigned to each member of the STR (Sistema de Transferência de Reservas) by the country's central bank, Banco Central do brasil
 
-```
-curl https://bbdb.crz.li/?q=itau&compact=yes
-```
+BBDb is am open-source service to provide this information up-to-date and free of charge for your applications to consume via an HTTP API.
 
-### Response
+It's the same API we use when developing our own applications.
 
-```
-HTTP/1.1 200 OK
-Access-Control-Allow-Origin: : *
-Content-Type: application/json; charset=utf-8
-Etag: 0ee55f76a1ec068837b939821e96d3de
-Content-Length: 382
+## Usage
 
-[
-  {
-    "name": "Banco Itaú BBA S.A.",
-    "code": "184",
-    "url": "http://www.itaubba.com.br/"
-  },
-  { "name": "Banco Itaú Consignado S.A.", "code": "029", "url": "" },
-  {
-    "name": "Banco ItauBank S.A",
-    "code": "479",
-    "url": "http://www.itaubank.com.br/"
-  },
-  {
-    "name": "Itaú Unibanco Holding S.A.",
-    "code": "652",
-    "url": "http://www.itau.com.br/"
-  },
-  {
-    "name": "Itaú Unibanco S.A.",
-    "code": "341",
-    "url": "http://www.itau.com.br/"
-  }
-]
+At a glance, here's an example of filling a `<select>` element with data from the API.
+
+```html
+<select></select>
+
+<script>
+  const select = document.querySelector("select");
+
+  fetch("https://bbdb.crz.li/?compe=y")
+    .then(resp => resp.json())
+    .then(data => {
+      data.forEach(entry => {
+        const opt = document.createElement("option");
+        opt.value = entry.code;
+        opt.textContent = entry.name;
+        select.add(opt);
+      }
+    });
+</script>
 ```
 
-The `compact` parameter exclude items with a blank `code` field. Optionally you can omit the `q` parameter to get a full list of all banks.
+The `compe` parameter **exclude** items with a blank `code` field. That's usually what you want.
 
 ## API
 
-The endpoint is `https://bbdb.crz.li`.
+The public endpoint is `https://bbdb.crz.li`.
 
 <dl>
   <dt><code>GET /</code></dt>
-  <dd>Returns the whole list.</dd>
+  <dd>Get all the records.</dd>
   <dt><code>GET /?q=...</code></dt>
-  <dd>Filter the list by partial match. Normalizes special characters.</dd>
-  <dt><code>GET /?compact=on|yes|true|1</code></dt>
-  <dd>Exclude banks with blank codes.</dd>
+  <dd>Filter the records by partial match. Normalizes special characters.</dd>
+  <dt><code>GET /?compe=y|yes|t|true|1</code></dt>
+  <dd>Exclude records with a blank <code>code</code> field.</dd>
 </dl>
 
 ## Development
@@ -69,11 +58,11 @@ $ go mod download
 
 See [Makefile](Makefile) for build tasks.
 
-The data is loaded from disk. The expected format is a CSV using `;` as separator.
+The data is loaded from disk, and the expected format is CSV.
 
 ## Reference
 
-1. [Febraban](https://portal.febraban.org.br/pagina/3164/12/pt-br/associados)
+- https://www.bcb.gov.br/estabilidadefinanceira/str
 
 ## License
 

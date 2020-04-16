@@ -5,91 +5,58 @@ import (
 	"crypto/md5"
 	"encoding/csv"
 	"encoding/gob"
+	"encoding/hex"
 	"encoding/json"
 	"flag"
 	"fmt"
 	"io"
 	"log"
 	"net/http"
-	"net/url"
 	"os"
 	"regexp"
+	"strings"
 	"time"
 
 	"golang.org/x/text/language"
 	"golang.org/x/text/search"
 )
 
-type Record struct {
+type dataRecord struct {
 	Name string `json:"name"`
 	Code string `json:"code"`
-	URL  string `json:"url"`
+	ISPB string `json:"ispb"`
 }
 
-var boolExpr = regexp.MustCompile("^(on|yes|true|1)$")
-var matcher = search.New(language.BrazilianPortuguese, search.Loose)
-var database = []*Record{}
-
-func hash(i interface{}) [16]byte {
-	var b bytes.Buffer
-	gob.NewEncoder(&b).Encode(i)
-	return md5.Sum(b.Bytes())
+type bufRespWriter struct {
+	http.ResponseWriter
+	status int
+	buffer []byte
 }
 
-func handler(w http.ResponseWriter, r *http.Request) {
-	if r.URL.Path != "/" {
-		http.NotFound(w, r)
-		return
-	}
-
-	if err := r.ParseForm(); err != nil {
-		log.Print("ParseForm():", err)
-		http.Error(w, "", http.StatusInternalServerError)
-		return
-	}
-
-	results := []*Record{}
-
-	query := r.FormValue("q")
-	if query == "" {
-		results = database
-	} else {
-		for _, record := range database {
-			match := matcher.CompileString(query)
-			if i, _ := match.IndexString(record.Code + " " + record.Name); i > -1 {
-				results = append(results, record)
-			}
-		}
-	}
-
-	compact := r.FormValue("compact")
-	if boolExpr.MatchString(compact) {
-		compacted := results[:0]
-		for _, record := range results {
-			if record.Code != "" {
-				compacted = append(compacted, record)
-			}
-		}
-		results = compacted
-	}
-
-	w.Header().Set("ETag", fmt.Sprintf("%x", hash(results)))
-
-	json.NewEncoder(w).Encode(results)
+func (w *bufRespWriter) WriteHeader(status int) {
+	w.status = status
 }
 
-func middleware(w http.ResponseWriter, r *http.Request) {
-	checkpoint := time.Now()
-
-	w.Header().Set("Content-Type", "application/json; charset=utf-8")
-	w.Header().Set("Access-Control-Allow-Origin:", "*")
-
-	handler(w, r)
-
-	log.Println(r.Method, r.URL.Path, r.Form.Encode(), time.Since(checkpoint))
+func (w *bufRespWriter) Write(b []byte) (int, error) {
+	if w.status == 0 {
+		w.status = 200
+	}
+	w.buffer = append(w.buffer, b...)
+	return len(b), nil
 }
 
-func loadDataSrc(path string) {
+func (w *bufRespWriter) Flush() error {
+	if w.status == 0 {
+		w.status = 200
+	}
+	_, err := w.ResponseWriter.Write(w.buffer)
+	return err
+}
+
+var numericExpr = regexp.MustCompile(`^[0-9]+$`)
+var boolExpr = regexp.MustCompile(`^(y|yes|t|true|1)$`)
+
+func loadAndHashData(path string) ([]*dataRecord, string) {
 	file, err := os.Open(path)
 	if err != nil {
 		panic(err)
@@ -97,42 +64,132 @@ func loadDataSrc(path string) {
 	defer file.Close()
 
 	reader := csv.NewReader(file)
-	reader.Comma = ';'
+
+	// Skip headers
+	if _, err = reader.Read(); err != nil {
+		panic(err)
+	}
+
+	var records []*dataRecord
 
 	for {
-		record, err := reader.Read()
+		data, err := reader.Read()
 		if err == io.EOF {
 			break
 		}
 		if err != nil {
-			log.Fatal(err)
+			panic(err)
 		}
 
-		database = append(database, &Record{
-			Code: record[0],
-			Name: record[1],
-		})
+		r := &dataRecord{
+			ISPB: data[0],
+			Name: strings.TrimSpace(data[5]),
+		}
+		if numericExpr.MatchString(data[2]) {
+			r.Code = data[2]
+		}
+		records = append(records, r)
+	}
 
-		if len(record) > 2 {
-			if u, err := url.Parse(record[2]); err == nil {
-				u.Scheme = "http"
-				database[len(database)-1].URL = u.String()
+	hasher := md5.New()
+
+	var b bytes.Buffer
+	gob.NewEncoder(&b).Encode(records)
+	hasher.Write(b.Bytes())
+
+	return records, hex.EncodeToString(hasher.Sum(nil))
+}
+
+func v1APIHandler(database []*dataRecord, matcher *search.Matcher) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		if r.URL.Path != "/" {
+			http.NotFound(w, r)
+			return
+		}
+
+		if err := r.ParseForm(); err != nil {
+			log.Print("ParseForm():", err)
+			w.WriteHeader(http.StatusInternalServerError)
+			return
+		}
+
+		w.Header().Set("Content-Type", "application/json; charset=utf-8")
+		w.Header().Set("Access-Control-Allow-Origin:", "*")
+
+		results := []*dataRecord{}
+
+		query := r.FormValue("q")
+		if query == "" {
+			results = database
+		} else {
+			for _, record := range database {
+				match := matcher.CompileString(query)
+				if i, _ := match.IndexString(record.Code + " " + record.Name); i > -1 {
+					results = append(results, record)
+				}
 			}
 		}
-	}
+
+		if boolExpr.MatchString(r.FormValue("code")) {
+			tmp := results[:0]
+			for _, record := range results {
+				if record.Code != "" {
+					tmp = append(tmp, record)
+				}
+			}
+			results = tmp
+		}
+
+		json.NewEncoder(w).Encode(results)
+	})
+}
+
+func cachingHandler(ttl time.Duration, etag string, next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Cache-Control", fmt.Sprintf("max-age=%d", ttl/time.Second))
+		w.Header().Set("ETag", etag)
+
+		if match := r.Header.Get("If-None-Match"); match != "" {
+			if strings.Contains(match, etag) {
+				w.WriteHeader(http.StatusNotModified)
+				return
+			}
+		}
+
+		next.ServeHTTP(w, r)
+	})
+}
+
+func bufRespLogHandler(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		b := &bufRespWriter{w, 0, []byte{}}
+		t := time.Now()
+
+		next.ServeHTTP(b, r)
+		b.Flush()
+
+		log.Println(r.Method, r.URL.Path, r.Form.Encode(), b.status, len(b.buffer), time.Since(t))
+	})
 }
 
 func main() {
 	var (
-		addr string
-		src  string
+		listenAddr string
+		dataSrc    string
 	)
 
-	flag.StringVar(&addr, "addr", ":8080", "Address the server will bind to")
-	flag.StringVar(&src, "src", "database.csv", "Path to CSV data source")
+	flag.StringVar(&listenAddr, "addr", ":8080", "Address the server will bind to")
+	flag.StringVar(&dataSrc, "src", "data.csv", "Path to CSV data source")
+
 	flag.Parse()
 
-	loadDataSrc(src)
+	database, etag := loadAndHashData(dataSrc)
+	matcher := search.New(language.BrazilianPortuguese, search.Loose)
 
-	log.Fatal(http.ListenAndServe(addr, http.HandlerFunc(middleware)))
+	handler := v1APIHandler(database, matcher)
+
+	handler = cachingHandler(time.Hour*24*365, etag, handler)
+	handler = bufRespLogHandler(handler)
+
+	http.ListenAndServe(listenAddr, handler)
 }
