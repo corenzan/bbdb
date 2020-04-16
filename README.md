@@ -21,14 +21,14 @@ At a glance, here's an example of filling a `<select>` element with data from th
   const select = document.querySelector("select");
 
   fetch("https://bbdb.crz.li/?compe=y")
-    .then(resp => resp.json())
-    .then(data => {
-      data.forEach(entry => {
+    .then((resp) => resp.json())
+    .then((data) => {
+      data.forEach((entry) => {
         const opt = document.createElement("option");
         opt.value = entry.code;
         opt.textContent = entry.name;
         select.add(opt);
-      }
+      });
     });
 </script>
 ```
