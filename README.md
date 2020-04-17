@@ -1,14 +1,12 @@
 # BBDb
 
-> Free open-source API for querying banks' numeric code in Brazil.
+> Free open-source API for querying banks identification in Brazil.
 
 ## About
 
-Monetary transactions in Brazil, such as transfers and deposits, require a numeric code that identifies the financial institution that manages the destinated account. This numeric code is assigned to each member of the STR (Sistema de Transferência de Reservas) by the country's central bank, Banco Central do brasil
+Monetary transactions in Brazil, such as transfers and deposits, require a numeric code that identifies the financial institution that manages the destinated account. This numeric code is assigned to each member of the STR (Sistema de Transferência de Reservas) by the country's central bank, Banco Central do Brasil.
 
-BBDb is am open-source service to provide this information up-to-date and free of charge for your applications to consume via an HTTP API.
-
-It's the same API we use when developing our own applications.
+BBDb is an open-source service to provide this information up-to-date and free of charge via an HTTP API.
 
 ## Usage
 
@@ -33,7 +31,7 @@ At a glance, here's an example of filling a `<select>` element with data from th
 </script>
 ```
 
-The `compe` parameter **exclude** items with a blank `code` field. That's usually what you want.
+The `compe` parameter **exclude** items with a blank `code` field.
 
 ## API
 
