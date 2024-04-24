@@ -1,0 +1,5 @@
+services:
+  web:
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.bbdb.rule=Host(`bbdb.local.crz.li`)"

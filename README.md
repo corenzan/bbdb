@@ -10,7 +10,7 @@ BBDb is an open-source web service that provides this information up-to-date and
 
 ## Usage
 
-At a glance, here's an example of filling a `<select>` element with data from the API.
+At a glance, here's an example of filling a `<select>` element with options from the API.
 
 ```html
 <select></select>
@@ -43,20 +43,26 @@ The public endpoint is `https://bbdb.crz.li`.
   <dt><code>GET /?q=...</code></dt>
   <dd>Filter the records by partial match. Normalizes special characters.</dd>
   <dt><code>GET /?compe=y|yes|t|true|1</code></dt>
-  <dd>Exclude records with a blank <code>code</code> field.</dd>
+  <dd>Only show banks that participate in the payment system, Compe.</dd>
 </dl>
 
 ## Development
 
-You'll need Go 1.14.2+. Clone and download dependencies.
+You'll need Go 1.22+. Clone the repository, then run:
 
 ```shell
-$ go mod download
+go mod download
 ```
 
-See [Makefile](Makefile) for build tasks.
+To download dependencies. Then:
 
-The data is loaded from disk, and the expected format is CSV.
+```shell
+go run .
+```
+
+To start the server.
+
+The data is read from `data.csv`.
 
 ## Reference
 

@@ -1,4 +1,5 @@
+# Ignore binary artifact.
 bbdb
-.env
-*.log
 
+# Ignore local override file.
+compose.override.yml

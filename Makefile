@@ -1,9 +1,0 @@
-build: fmt vet
-	@go build .
-test: fmt vet
-	@go test ./...
-fmt:
-	@go fmt ./...
-vet:
-	@go vet ./...
-.PHONY: build test fmt vet 
