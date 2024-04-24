@@ -108,7 +108,7 @@ func apiHandler(database []*dataRecord, matcher *search.Matcher) web.Middleware 
 				}
 			}
 
-			if boolExpr.MatchString(r.FormValue("code")) {
+			if boolExpr.MatchString(r.FormValue("compe")) {
 				tmp := results[:0]
 				for _, record := range results {
 					if record.Code != "" {
@@ -129,7 +129,7 @@ func main() {
 		src  string
 	)
 
-	flag.StringVar(&addr, "addr", ":8080", "Address the server will listen to")
+	flag.StringVar(&addr, "addr", ":8080", "Address the server will listen on")
 	flag.StringVar(&src, "src", "data.csv", "Path to CSV data source")
 
 	flag.Parse()
